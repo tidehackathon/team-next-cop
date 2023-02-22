@@ -1,10 +1,6 @@
-# Maker Dataset
+# Upload Map
 
-#### Code for creating dataset from drone video. Result: drone image == image from satellite map
-
-File `log_reader` - parse log.file of drone for receive: number of frame with coordinates. Return `dict` 
-
-File `video_reader` - cuts video into frames (you can set the step between frames). For each frame from the drone, it generates a request to `Google api` based on information from the log file (which we get from `log_reader`). Receives in response an image from Google maps. Saves the image
+#### Code for uploading map to drone
 
 File `uploadmap` - downloads satellite photos of google maps for mapping and obtaining coordinates from them. using two opposite points of the required area, for example  1st -`50.425386  30.702002`  2nd - `50.426786 30.701002`
 
@@ -17,18 +13,10 @@ It is also worth noting that for each frame from the drone, the function generat
 
 `GOOGLE_API_KEY`
 
-
 ## Usage
 
 ```python
-if __name__ == '__main__':
-    path_to_log = "PATH/TO/LOG.SRT"
-    log_info = log_proccesing(path_to_log)
-    path_to_video = "PATH/TO/VIDEO.MP4"
-    path_dron = 'PATH/TO/DRONE_IMAGES/SAVE'
-    path_map = 'PATH/TO/MAPS_IMAGES/SAVE'
-    apiKey = "GOOGLE_API_KEY"
-    video_proccesing(log_info, path_to_video, path_dron, path_map,apiKey)
+apiKey = "GOOGLE_API_KEY"
 ```
 
 
@@ -42,7 +30,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd team-next-cop/maker_dataset
+  cd team-next-cop/UploadMap
 ```
 Create enviroment
 
@@ -59,6 +47,6 @@ Install dependencies
 Command for start
 
 ```bash
-  python video_reader.py
+  python uploadMap.py
 ```
 

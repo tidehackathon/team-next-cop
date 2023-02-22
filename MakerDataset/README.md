@@ -38,7 +38,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd team-next-cop/maker_dataset
+  cd team-next-cop/MakerDataset
 ```
 Create enviroment
 
