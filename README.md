@@ -23,7 +23,16 @@
 
 ## Application Parts
 
+- Azure Portal [Azure Portal](https://portal.azure.com/)
 - Maker Dataset [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/MakerDataset/README.md)
 - Train AI [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/TrainAI/README.md)
 - Upload Map [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/UploadMap/README.md)
 - Air AI [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/AirAI/README.md)
+
+
+## Setup Azure for Traine AI
+
+- Create Accont [Azure Portal](https://portal.azure.com/)
+- Create VM(Linux) [How to?](https://learn.microsoft.com/ru-ru/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu)
+- Add NVIDIA GPU-Optimized TensorFlow VMI from Azure Marketplace
+- Setup Jupyter [How to?](https://learn.microsoft.com/en-us/azure/lab-services/class-type-jupyter-notebook) 
