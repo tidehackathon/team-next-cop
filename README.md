@@ -23,7 +23,7 @@
 
 ## Application Parts
 
-- Maker Dataset [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/maker_dataset/README.md)
-- Train AI [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/Train%20AI/README.md)
-- Upload Map [ReadMe](https://linktodocumentation)
-- Air AI [ReadMe](https://linktodocumentation)
+- Maker Dataset [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/MakerDataset/README.md)
+- Train AI [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/TrainAI/README.md)
+- Upload Map [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/UploadMap/README.md)
+- Air AI [ReadMe](https://github.com/tidehackathon/team-next-cop/blob/main/UploadMap/README.md)
