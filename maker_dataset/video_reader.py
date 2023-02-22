@@ -4,7 +4,7 @@ import requests
 from log_reader import log_proccesing
 
 
-def video_proccesing(log_info, path_to_video, path_dron, path_map):
+def video_proccesing(log_info, path_to_video, path_dron, path_map,apiKey):
     cam = cv2.VideoCapture(path_to_video)
 
     # frame
@@ -42,7 +42,7 @@ def video_proccesing(log_info, path_to_video, path_dron, path_map):
                     elif i == 4:
                         lat = float(latitude)
                         lon = float(longitude) + 0.00001
-                    apiKey = "AIzaSyBGeJsMbrNEkYTbSaLkSS6K84xk-TO_8ys"
+                    
 
                     reqLink = f'https://maps.googleapis.com/maps/api/staticmap?center={lat},{lon}&scale=2&format=png&zoom=17&size=640x360&maptype=satellite&key={apiKey}'
                     img_data = requests.get(reqLink).content
@@ -66,4 +66,5 @@ if __name__ == '__main__':
     path_to_video = "D:\\100MEDIA\\DJI_0006.MP4"
     path_dron = 'D:\\DronPic\\'
     path_map = 'D:\\MapPic\\'
-    video_proccesing(log_info, path_to_video, path_dron, path_map)
+    apiKey = "GOOGLE_API_KEY"
+    video_proccesing(log_info, path_to_video, path_dron, path_map,apiKey)
